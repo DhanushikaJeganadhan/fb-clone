@@ -1,18 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Poppins:ital,wght@0,300;0,700;0,900;1,300;1,500&display=swap');
+:root { 
+    --green: rgba(5, 189, 5, 0.952);
+    --blue:rgb(89, 129, 238);
+    --text-colour: rgba(43, 41, 41, 0.671);
+    --backround-gray: rgb(239, 240, 245);
+    --border-radius: 8px
+}
 body{
     margin: 0;
     padding: 0;
+    background: var(--backround-gray);
+    font-family: poppins;
    
 }
 .container{
     grid-template-columns: 50% 50%;
     display: grid;
+    margin-left: 150px;
 }
 aside{
     display: flex;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
+   
+   
 }
 .facebook {
-    margin-left:40px ;
+    margin-right: 0px;
+    margin-left:0px ;
+    margin-top: 150px;
+    
 }
+.facebook h1{
+    margin-top: 50px;
+    font-size: 50px;
+    margin-bottom: 0px;
+    color: var(--blue);
+}
+.facebook h3{
+    font-size: 27px;
+    font-weight: 500;
+    margin-top: 0;
+    color: rgb(2, 2, 2);
+}
+main{
+    display: flex;
+    align-items: center;
+   
+}
+input{
+    width: 100%;
+    box-sizing: border-box;
+    border: 5px solid rgb(0, 0, 0);
+    outline: none;
+    transition: 0.5s;
+}
+.input-container{
+    
+    height: 320px;
+    
+}
+.login-box form{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius);  
+    width: 370px;
+    background: white;
+    padding: 10px;
+    margin-left: 0px;
+    text-align: center;
+    box-shadow: 0 1px 10px gray;
+    transition: all 500ms ease;
+    
+    
+}
+::placeholder{
+    column-rule-color: gray;
+    font-family: poppins;
+    padding: 10px;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+.login-box form input{
+    border-color:rgb(238, 232, 232);
+    border-width: 0.5px;
+    margin: 5px;
+    width:98%;
+    height: 45px;
+    border-radius: var(--border-radius); 
+    
+
+}
+.login-box form button{
+    
+    height: 47px;
+    border-radius: var(--border-radius); 
+    border: none;
+    color: white;
+    font-weight: 100px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.log-in {
+    width: 100%;
+    background-color: var(--blue);
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 8rem var(--color-light);
+}
+.create-account{
+    width: 50%;
+    background: var(--green);
+    font-weight: bold;
+}
+main a{
+    text-decoration: none;
+}
+.create-page{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+}
+.create-page a{
+    font-weight: bold;
+    color: rgb(63, 59, 59);
+    
+}
+button{
+    transition: all 300ms ease;
+}
+
+
+form a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: rgb(62, 111, 245);
+    
+}
+.login-box form:hover{
+    box-shadow: none;
+}
+button:hover{
+    transform: translateY(-2px);
+}
+.log-in:hover{
+    background: rgb(79, 79, 224);
+}
+.create-account:hover{
+    background: rgb(10, 173, 10);
+}
+a:hover{
+    text-decoration: underline;
+}
+input:focus{
+    transition: none;
+    outline: none;
+   outline: 1px solid rgb(126, 191, 245);
+   box-shadow: 0 2px 8px rgb(204, 204, 236);
+}
+   
+
+
+
